@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>User Login</h2>
+            <form action="user_login.php" method="post">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" name="user_id" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" name="login_submit">Login</button>
+            </form>
+        </div>
+        <div class="login">
+            <h2>Admin Login</h2>
+            <form action="admin_login.php" method="post">
+                <label for="admin_id">Admin ID:</label>
+                <input type="text" id="admin_id" name="admin_id" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" name="admin_submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
